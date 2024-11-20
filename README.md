@@ -22,10 +22,10 @@
   Application popup: Windows - Out of Virtual Memory : Your system is low on virtual memory. To ensure that Windows runs properly, increase the size of your virtual memory paging file. For more information, see Help. 
  
  ### Application Error (Visual Studio) 
-  Faulting application name: devenv.exe, version: 17.11.35208.52, time stamp: 0x66b4ebf1
-  Faulting module name: KERNELBASE.dll, version: 10.0.19041.5131, time stamp: 0x011921da
-  Exception code: 0xe0434352
-  Faulting process id: 0x2c08
+ Faulting application name: devenv.exe, version: 17.11.35208.52, time stamp: 0x66b4ebf1  
+ Faulting module name: KERNELBASE.dll, version: 10.0.19041.5131, time stamp: 0x011921da  
+ Exception code: 0xe0434352  
+ Faulting process id: 0x2c08  
 
  ## Additional non-Event Viewer logs
  ### OBS
