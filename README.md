@@ -14,9 +14,24 @@
 |-----------------|-----------------|
 | ![VRam Before](imgs/vram.png) | ![VRam After](imgs/vram_after.png) |
 
+ ## 24/11/22 Crash
+### Memory
+| Before          | After           |
+|-----------------|-----------------|
+| ![Memory Before](imgs/24-11-22_memory.png) | ![Memory After](imgs/24-11-22_memory_after.png) |
+
+### VRam
+| Before          | After           |
+|-----------------|-----------------|
+| ![VRam Before](imgs/24-11-22_vram.png) | ![VRam After](imgs/24-11-22_vram_after.png) |
+
  ## Windows Event Viewer
  ### Resource-Exhaustion-Detector
   Windows successfully diagnosed a low virtual memory condition. The following programs consumed the most virtual memory: firefox.exe (4756) consumed 3025575936 bytes, VNyan.exe (26416) consumed 1831944192 bytes, and obs64.exe (3532) consumed 1496326144 bytes.
+ 
+ ## Service Control Manager (24-11-22)
+ The AppX Deployment Service (AppXSVC) service failed to start due to the following error:  
+ The paging file is too small for this operation to complete.
  
  ### Application Popup
   Application popup: Windows - Out of Virtual Memory : Your system is low on virtual memory. To ensure that Windows runs properly, increase the size of your virtual memory paging file. For more information, see Help. 
@@ -29,6 +44,16 @@
 
  ## Additional non-Event Viewer logs
  ### OBS
+ 
+		16:26:44.051: [texture-amf-h264: 'advanced_video_stream'] amf_encode_tex: QueryOutput failed: AMF_OUT_OF_MEMORY
+		16:26:44.051: Error encoding with encoder 'advanced_video_stream'
+		16:26:44.051: [rtmp stream: 'adv_stream'] Encoder error, disconnecting
+		16:26:44.051: [rtmp stream: 'adv_stream'] Socket send buffer is 1048576 bytes
+		16:26:44.051: socket_thread_windows: Normal exit
+		16:26:44.051: Output 'adv_stream': stopping
+		
+		--- previous log from (24/11/20) ---
+		
 		11:00:57.305: [texture-amf-h264: 'advanced_video_stream'] amf_encode_tex: Failed to create texture: 0x8007000E
 		11:00:57.305: Error encoding with encoder 'advanced_video_stream'
 		11:00:57.305: Video stopped, number of skipped frames due to encoding lag: 5/41975 (0.0%)
@@ -45,4 +70,4 @@
 		09:53:40.916: [rtmp stream: 'adv_stream'] Encoder error, disconnecting
 		
  ### vNyan (Unity based VTubing software)
-  Out of Memory error window.
+  ![vNyan error dialog](imgs/vnyan_unity.png)
